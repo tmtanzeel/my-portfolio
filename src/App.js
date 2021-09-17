@@ -3,6 +3,8 @@ import PageNavbar from './components/PageNavbar/PageNavbar';
 import TalentCard from './components/TalentCard/TalentCard';
 import youtube from "./assets/images/youtube-logo.png";
 import github from "./assets/images/github-logo.png";
+import YouTubeApi from "./api/youtube-api";
+import YouTubePlaylistApi from "./api/youtube-playlist-api";
 
 
 
@@ -14,9 +16,11 @@ function App() {
       <TalentCard
         headingText="Code blooded - The Social coder"
         imageSource={youtube}
-        subheadingText="Not a big time youtuber. But would love to show how the code works.">
+        subheadingText="Not a big time youtuber. But would love to share how the code works.">
+        <YouTubeApi></YouTubeApi>
+        <YouTubePlaylistApi></YouTubePlaylistApi>
       </TalentCard>
-      {/* Github card */}
+      {/* GitHub card */}
       <TalentCard
         headingText="Code contribution"
         imageSource={github}

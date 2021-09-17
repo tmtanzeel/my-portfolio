@@ -11,7 +11,7 @@ const TalentCard = (props) => {
                 <CardTitle className="heading-text" tag="h5">{props.headingText}</CardTitle>
                 <Image className="card-logo" height={100} width={300} src={props.imageSource} alt="logo" />
                 <CardText className="subheading-text">{props.subheadingText}</CardText>
-                <h4>API Goes here</h4>
+                <h4>{props.children}</h4>
                 <small className="small-text">{props.smallText}</small>
             </Card>
         </div>

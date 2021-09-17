@@ -1,11 +1,13 @@
 import './App.css';
 import PageNavbar from './components/PageNavbar/PageNavbar';
 import TalentCard from './components/TalentCard/TalentCard';
-import youtube from "./assets/images/youtube-logo.png";
-import github from "./assets/images/github-logo.png";
 import YouTubeApi from "./api/youtube-api";
 import YouTubePlaylistApi from "./api/youtube-playlist-api";
 import GitHubCalendarApi from './api/github-api';
+
+import youtube from "./assets/images/youtube-logo.png";
+import github from "./assets/images/github-logo.png";
+import stackoverflow from "./assets/images/stackoverflow-logo.png";
 
 
 function App() {
@@ -27,6 +29,19 @@ function App() {
         subheadingText="Fork - Contribute - Clone. Give me a high five.
         Find all my projects on GitHub. Chears!">
         <GitHubCalendarApi></GitHubCalendarApi>
+      </TalentCard>
+      {/* Stackoverflow card */}
+      <TalentCard
+        headingText="I asked them how I am doing"
+        imageSource={stackoverflow}
+        subheadingText="They gave me this tiny flair. Let me know if there is a better API">
+        <a href="https://stackoverflow.com/users/11163977/tanzeel">
+          <img
+            src="https://stackoverflow.com/users/flair/11163977.png"
+            width="208" height="58"
+            alt="Profile for Tanzeel at Stack Overflow"
+            title="Profile for Tanzeel at Stack Overflow" />
+        </a>
       </TalentCard>
     </div>
   );

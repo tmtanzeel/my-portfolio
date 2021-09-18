@@ -18,10 +18,10 @@ const WorkexperienceCard = (props) => {
                 <Col md={8} className="work-history">
                     <ul>
                         <li>
-                            {props.tenure}
+                            {props.position}
                         </li>
                         <li>
-                            {props.position}
+                            {props.tenure}
                         </li>
                         <li>
                             {props.typeOfEmployee}

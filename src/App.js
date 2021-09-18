@@ -2,6 +2,7 @@ import './App.css';
 import PageNavbar from './components/PageNavbar/PageNavbar';
 import TalentCard from './components/TalentCard/TalentCard';
 import WorkexperienceCard from './components/WorkexperienceCard/Workexperience-card';
+import EducationTimeline from './components/EducationTimeline/EducationTimeline';
 import DoodleCard from './components/DoodleCard/DoodleCard';
 
 import YouTubeApi from "./api/youtube-api";
@@ -61,6 +62,8 @@ class App extends Component {
           </div>
         </div>
 
+        <br /><br />
+
         <WorkexperienceCard
           companyIntro={this.state.philipsWorkexperience[0].companyIntro}
           imageSource={philipsLogo}
@@ -69,7 +72,12 @@ class App extends Component {
           typeOfEmployee={this.state.philipsWorkexperience[3].typeOfEmployee}
         >
         </WorkexperienceCard>
-        <br />
+
+        <br /><br />
+        <br /><br />
+        <EducationTimeline></EducationTimeline>
+
+        <br /><br />
         <br /><br />
         <DoodleCard
           doodleHeadingText={this.state.pizzaDoodle[0].doodleHeaderText}

@@ -1,0 +1,22 @@
+.workexperience-card-wrapper {
+    margin-top: 100px;
+}
+
+.company-intro {
+    font-family: 'Josefin Sans', sans-serif;  
+    padding-bottom: 20px;
+}
+
+.work-history {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;  
+}
+
+.key-roles-heading {
+    font-family: 'Josefin Sans', sans-serif;  
+}
+
+.key-roles {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;  
+}

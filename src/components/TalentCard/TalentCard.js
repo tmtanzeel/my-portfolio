@@ -4,7 +4,6 @@ import Image from 'react-image-resizer';
 import './TalentCard.css';
 
 const TalentCard = (props) => {
-    console.log(props.imageSource);
     return (
         <div className="talent-card-container">
             <Card body className="text-center talent-card-wrapper">

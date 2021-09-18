@@ -1,6 +1,8 @@
 import './App.css';
 import PageNavbar from './components/PageNavbar/PageNavbar';
 import TalentCard from './components/TalentCard/TalentCard';
+import WorkexperienceCard from './components/WorkexperienceCard/Workexperience-card';
+
 import YouTubeApi from "./api/youtube-api";
 import YouTubePlaylistApi from "./api/youtube-playlist-api";
 import GitHubCalendarApi from './api/github-api';
@@ -9,7 +11,7 @@ import youtube from "./assets/images/youtube-logo.png";
 import github from "./assets/images/github-logo.png";
 import stackoverflow from "./assets/images/stackoverflow-logo.png";
 import bannerimage from "./assets/images/bg-banner.jpeg";
-
+import philipsLogo from "./assets/images/philips-healthcare-logo.png";
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
     backgroundImage: `url(${bannerimage})`,
     backgroundSize: 'cover',
   };
+
   let overlayOnBanner = {
     width: '100%',
     height: '100%',
@@ -30,6 +33,8 @@ function App() {
     alignItems: 'center',
   }
 
+
+
   return (
     <div className="App">
       <PageNavbar></PageNavbar>
@@ -37,6 +42,15 @@ function App() {
         <div style={overlayOnBanner}>
         </div>
       </div>
+
+      <WorkexperienceCard
+        companyIntro="Currently I'm working for Philips Healthcare, Bangalore"
+        imageSource={philipsLogo}
+        tenure="Onboarded Jan, 2019 and currently working here"
+        position="Software Development Engineer I"
+        typeOfEmployee="6 months of Internship, Then converted to Full time"
+      >
+      </WorkexperienceCard>
 
       {/* YouTube card */}
       <TalentCard

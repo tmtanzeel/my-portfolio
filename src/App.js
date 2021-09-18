@@ -2,6 +2,7 @@ import './App.css';
 import PageNavbar from './components/PageNavbar/PageNavbar';
 import TalentCard from './components/TalentCard/TalentCard';
 import WorkexperienceCard from './components/WorkexperienceCard/Workexperience-card';
+import DoodleCard from './components/DoodleCard/DoodleCard';
 
 import YouTubeApi from "./api/youtube-api";
 import YouTubePlaylistApi from "./api/youtube-playlist-api";
@@ -12,6 +13,12 @@ import github from "./assets/images/github-logo.png";
 import stackoverflow from "./assets/images/stackoverflow-logo.png";
 import bannerimage from "./assets/images/bg-banner.jpeg";
 import philipsLogo from "./assets/images/philips-healthcare-logo.png";
+import burger from "./assets/images/doodle-images/burger.png";
+import pizza from "./assets/images/doodle-images/pizza.png";
+import fries from "./assets/images/doodle-images/fries.png";
+import plus from "./assets/images/doodle-images/plus.png";
+import equal from "./assets/images/doodle-images/equal.png";
+import smiley from "./assets/images/doodle-images/smiley.png";
 
 function App() {
 
@@ -33,8 +40,6 @@ function App() {
     alignItems: 'center',
   }
 
-
-
   return (
     <div className="App">
       <PageNavbar></PageNavbar>
@@ -51,6 +56,19 @@ function App() {
         typeOfEmployee="6 months of Internship, Then converted to Full time"
       >
       </WorkexperienceCard>
+      <br />
+      <DoodleCard
+        doodleHeadingText="Also looking for other opportunities. Will be happy to write some extra code for"
+        doodleImageSource1={pizza}
+        doodleImageSource2={burger}
+        doodleImageSource3={fries}
+        doodleImageSource4={smiley}
+        doodleImageSource5={plus}
+        doodleImageSource6={equal}
+      >
+      </DoodleCard>
+
+      <br />
 
       {/* YouTube card */}
       <TalentCard
@@ -60,6 +78,7 @@ function App() {
         <YouTubeApi></YouTubeApi>
         <YouTubePlaylistApi></YouTubePlaylistApi>
       </TalentCard>
+      <br />
       {/* GitHub card */}
       <TalentCard
         headingText="Code contribution"
@@ -68,19 +87,21 @@ function App() {
         Find all my projects on GitHub. Chears!">
         <GitHubCalendarApi></GitHubCalendarApi>
       </TalentCard>
+      <br />
       {/* Stackoverflow card */}
       <TalentCard
-        headingText="I asked them how I am doing"
+        headingText="I'm an active answerer (and answer seeker) on Stack overflow"
         imageSource={stackoverflow}
         subheadingText="They gave me this tiny flair. Let me know if there is a better API">
         <a href="https://stackoverflow.com/users/11163977/tanzeel">
           <img
-            src="https://stackoverflow.com/users/flair/11163977.png"
+            src="https://stackoverflow.com/users/flair/11163977.png?theme=dark"
             width="208" height="58"
             alt="Profile for Tanzeel at Stack Overflow"
             title="Profile for Tanzeel at Stack Overflow" />
         </a>
       </TalentCard>
+      <br />
     </div>
   );
 }

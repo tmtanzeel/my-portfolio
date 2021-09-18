@@ -8,12 +8,36 @@ import GitHubCalendarApi from './api/github-api';
 import youtube from "./assets/images/youtube-logo.png";
 import github from "./assets/images/github-logo.png";
 import stackoverflow from "./assets/images/stackoverflow-logo.png";
+import bannerimage from "./assets/images/bg-banner.jpeg";
 
 
 function App() {
+
+  let banner = {
+    width: '100%',
+    height: '850px',
+    backgroundImage: `url(${bannerimage})`,
+    backgroundSize: 'cover',
+  };
+  let overlayOnBanner = {
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(255,255,255,0.3)',
+    fontSize: 1.5 + 'rem',
+    fontWeight: 'bold',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+
   return (
     <div className="App">
       <PageNavbar></PageNavbar>
+      <div style={banner}>
+        <div style={overlayOnBanner}>
+        </div>
+      </div>
+
       {/* YouTube card */}
       <TalentCard
         headingText="Code blooded - The Social coder"

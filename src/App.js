@@ -5,6 +5,8 @@ import WorkexperienceCard from './components/WorkexperienceCard/Workexperience-c
 import EducationTimeline from './components/EducationTimeline/EducationTimeline';
 import DoodleCard from './components/DoodleCard/DoodleCard';
 
+import LanguageCard from './components/LanguageCard/LanguageCard';
+
 import YouTubeApi from "./api/youtube-api";
 import YouTubePlaylistApi from "./api/youtube-playlist-api";
 import GitHubCalendarApi from './api/github-api';
@@ -18,7 +20,26 @@ import burger from "./assets/images/doodle-images/burger.png";
 import pizza from "./assets/images/doodle-images/pizza.png";
 import fries from "./assets/images/doodle-images/fries.png";
 import beer from "./assets/images/doodle-images/beer.png";
+
+import node from "./assets/images/language-images/node.png";
+import django from "./assets/images/language-images/django.png";
+import golang from "./assets/images/language-images/golang.png";
+import grunt from "./assets/images/language-images/grunt.png";
+import json from "./assets/images/language-images/json.png";
+import jwt from "./assets/images/language-images/jwt.png";
+import lamp from "./assets/images/language-images/lamp.png";
+import lumen from "./assets/images/language-images/lumen.png";
+import npm from "./assets/images/language-images/npm.png";
+import php from "./assets/images/language-images/php.png";
+import postman from "./assets/images/language-images/postman.png";
+import react from "./assets/images/language-images/react.png";
+import rest from "./assets/images/language-images/rest.png";
+
+
+
+
 import { Component } from 'react';
+import reactDom from 'react-dom';
 
 class App extends Component {
 
@@ -50,7 +71,21 @@ class App extends Component {
     pizzaDoodle: [
       { doodleHeaderText: "I'm looking for opportunities. I'll be happy to write some extra code for" },
       { doodleFooterText: "" }
-    ]
+    ],
+    flowerCard: {
+      cardHeading: "I love JavaScript",
+      rows: [
+        [
+          { imageSource: node, text: "I am pretty much confident about my nodeJS skilss. Be it form validation or for any other runtime task, I prefer NodeJS." },
+          { imageSource: react, text: "React JavaScript is one of my favourite javascript framework. I love doing research and development and apply my results in my projects." },
+          { imageSource: npm, text: "I am a fan of the NPM community. I keep myself updated with the fast growing NPM culture." }
+        ],
+        [
+          { imageSource: grunt, text: "A JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting" },
+          { imageSource: json, text: "I'm really impressed with JSON. A perfect tool for managing unstructured data. I've created JSONify, a tool in Javafx to create JSON file for the information you provide." }
+        ]
+      ]
+    }
   }
 
   render() {
@@ -121,7 +156,11 @@ class App extends Component {
               title="Profile for Tanzeel at Stack Overflow" />
           </a>
         </TalentCard>
-        <br />
+        <br /><br /><br />
+        <LanguageCard
+          cardHeading={this.state.flowerCard.cardHeading}
+          tiles={this.state.flowerCard.rows}
+        ></LanguageCard>
       </div>
     )
   }

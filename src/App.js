@@ -10,6 +10,8 @@ import LanguageCard from './components/LanguageCard/LanguageCard';
 import YouTubeApi from "./api/youtube-api";
 import YouTubePlaylistApi from "./api/youtube-playlist-api";
 import GitHubCalendarApi from './api/github-api';
+import TextStripCard from './components/TextStripCard/TextStripCard';
+import Footer from './components/Footer/Footer';
 
 import youtube from "./assets/images/youtube-logo.png";
 import github from "./assets/images/github-logo.png";
@@ -84,6 +86,25 @@ class App extends Component {
           { imageSource: grunt, text: "A JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting" },
           { imageSource: json, text: "I'm really impressed with JSON. A perfect tool for managing unstructured data. I've created JSONify, a tool in Javafx to create JSON file for the information you provide." }
         ]
+      ]
+    },
+    textStripCard: {
+      textStripHeading: "Want to work together?",
+      textStripSubHeading: "I am currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it",
+      textStripTextColor: "#212529",
+      textStripBgColor: "#FED766"
+    },
+    footer: {
+      footerHeading: "Made with React from the scratch by Tanzeel",
+      footerSubHeading: "Call now - +91 8979539377",
+      footerTextColor: "white",
+      footerBgColor: "#252A30",
+      otherLinks: [
+        { icon: "fa fa-facebook fa-2x", link: "https://www.facebook.com/tanzeel.mirza.9/" },
+        { icon: "fa fa-linkedin fa-2x", link: "https://www.linkedin.com/in/tanzeel-mirza-9b784b168/" },
+        { icon: "fa fa-github fa-2x", link: "www.github.com/tmtanzeeel" },
+        { icon: "fa fa-youtube fa-2x", link: "https://www.youtube.com/channel/UCOYqNBjmWF8j-PzI7ZPjt_w" },
+        { icon: "fa fa-stack-overflow fa-2x", link: "https://stackoverflow.com/users/11163977/tanzeel" }
       ]
     }
   }
@@ -161,6 +182,22 @@ class App extends Component {
           cardHeading={this.state.flowerCard.cardHeading}
           tiles={this.state.flowerCard.rows}
         ></LanguageCard>
+        <br /><br /><br />
+
+        <TextStripCard
+          textStripHeading={this.state.textStripCard.textStripHeading}
+          textStripSubHeading={this.state.textStripCard.textStripSubHeading}
+          textStripBgColor={this.state.textStripCard.textStripBgColor}
+          textStripTextColor={this.state.textStripCard.textStripTextColor}
+        ></TextStripCard>
+        <Footer
+          footerHeading={this.state.footer.footerHeading}
+          footerSubHeading={this.state.footer.footerSubHeading}
+          footerTextColor={this.state.footer.footerTextColor}
+          footerBgColor={this.state.footer.footerBgColor}
+          footerLinks={this.state.footer.otherLinks}
+        >
+        </Footer>
       </div>
     )
   }

@@ -76,6 +76,7 @@ class App extends Component {
     ],
     flowerCard: {
       cardHeading: "I love JavaScript",
+      flowerBgColor: "white",
       rows: [
         [
           { imageSource: node, text: "I am pretty much confident about my nodeJS skilss. Be it form validation or for any other runtime task, I prefer NodeJS." },
@@ -181,6 +182,7 @@ class App extends Component {
         <LanguageCard
           cardHeading={this.state.flowerCard.cardHeading}
           tiles={this.state.flowerCard.rows}
+          flowerBgColor={this.state.flowerCard.flowerBgColor}
         ></LanguageCard>
         <br /><br /><br />
 

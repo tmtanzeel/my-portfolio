@@ -7,10 +7,9 @@ import './LanguageCard.css';
 const LanguageCard = (props) => {
 
     let localTiles = props.tiles;
-    let colGrid;
 
     return (
-        <div className="languageWrapper">
+        <div className="languageWrapper" style={{ backgroundColor: props.flowerBgColor }}>
             <h1 className="language-heading-text">{props.cardHeading}</h1>
             {localTiles.map((tile, index) => (
 

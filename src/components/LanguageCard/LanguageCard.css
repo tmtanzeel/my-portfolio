@@ -9,6 +9,8 @@
 .languageWrapper {
     align-content: center;
     display: inline flow-root;
+    padding: 25px 30px 20px 30px;
+    border-radius: 5px;
 }
 
 .languageText{

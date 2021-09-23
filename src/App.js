@@ -82,10 +82,6 @@ class App extends Component {
           { imageSource: node, text: "I am pretty much confident about my nodeJS skilss. Be it form validation or for any other runtime task, I prefer NodeJS." },
           { imageSource: react, text: "React JavaScript is one of my favourite javascript framework. I love doing research and development and apply my results in my projects." },
           { imageSource: npm, text: "I am a fan of the NPM community. I keep myself updated with the fast growing NPM culture." }
-        ],
-        [
-          { imageSource: grunt, text: "A JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting" },
-          { imageSource: json, text: "I'm really impressed with JSON. A perfect tool for managing unstructured data. I've created JSONify, a tool in Javafx to create JSON file for the information you provide." }
         ]
       ]
     },

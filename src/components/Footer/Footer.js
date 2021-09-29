@@ -10,7 +10,7 @@ const Footer = (props) => {
         <div className="footerWrapper" style={{ backgroundColor: props.footerBgColor, color: props.footerTextColor }}>
             <p className="footerHeading">{props.footerHeading}</p>
             <p className="footerSubHeading">{props.footerSubHeading}</p>
-            <a href={pdf} download>Download my resume</a>
+            <a href={pdf} download>Feel free to go through my resume</a>
             <br /><br />
 
             <div className="linkRow">

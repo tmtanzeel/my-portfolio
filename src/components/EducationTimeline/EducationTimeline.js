@@ -11,6 +11,7 @@ const VALUES = [
     '2019-01-01',
     '2019-06-17',
     '2019-08-01',
+    '2021-09-05'
 ];
 
 class EducationTimeline extends React.Component {
@@ -23,8 +24,10 @@ class EducationTimeline extends React.Component {
             { institute: "Punjab Technical University", attended: "BCA, 2010-2013", board: "PTU", location: "Jalandhar, Punjab" },
             { institute: "NIT Jamshedpur", attended: "MCA, 2014-2015", board: "Institue of National importance", location: "Jamshedpur, Jharkhand" },
             { institute: "Philips, SDE (Intern)", attended: "Joined for internship", board: "Philips Healthcare", location: "Philips Innovation Campus, Bangalore" },
-            { institute: "Philips, SDE-I (Full time)", attended: "Joined as Full Time Employee", board: "Philips Healthcare", location: "Philips Innovation Campus, Bangalore" },
+            { institute: "Philips, SDE-I (converted FTE)", attended: "Joined as Full Time Employee", board: "Philips Healthcare", location: "Philips Innovation Campus, Bangalore" },
             { institute: "NIT Allahabad", attended: "MCA, 2016-2019", board: "Institue of National importance", location: "Allahabad, Uttar Pradesh" },
+            { institute: "Philips, SDE-II", attended: "Promoted to SDE-II", board: "Philips Healthcare", location: "Philips Innovation Campus, Bangalore" }
+
         ]
     };
 
